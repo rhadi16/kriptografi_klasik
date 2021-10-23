@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>PLAYFAIR CIPHER - PROGRAM KRIFTOGRAFI</title>
+    <title>Playfair Cipher</title>
 </head>
 
 <script type="text/javascript">
@@ -461,26 +461,19 @@ function playfairCipher(){
     document.getElementById('playfairCipherDiv').innerHTML=newDiv;
 }
 </script>
-
+<style type="text/css">
+  section.content {
+    max-width: 500px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px auto;
+  }
+</style>
 <body class="theme-red">
 
     <section class="content">
         <div class="container-fluid">
 			<div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="card">
-            <div class="body">
-
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="home">
-                    <b>PLAYFAIR CIPHER</b>
-										<p> Playfair cipher atau bisa juga disebut Playfair square adalah teknik enkripsi simetrik yang termasuk dalam sistem substitusi digraph . sistem sandi ini diciptakan oleh Charles Wheatstone (kalo di buku fisika dia yang nemuin jembatan wheatstone) pada tahun 1854, namun dipopulerkan penggunaannya oleh Lord Playfair.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<?php
   				function Cipher($ch, $key)
   				{
@@ -645,7 +638,7 @@ function playfairCipher(){
 												<option selected value="Z">Z</option>
 												</select> diakhir.<hr></td></tr>
 												<tr><td>
-												<input type="radio" name="doubles" id="playfairCipherBreakCheck" onClick="setEnabled(3)">
+												<input type="checkbox" name="doubles" id="playfairCipherBreakCheck" onClick="setEnabled(3)"> Berhenti Sementara Enkrip dan Dekrip
 												</td></tr>
 												<tr><td>Pilih metode : <select id="playfairCipherMethod" onChange="playfairCipher()">
 												<option selected value="Decrypt">Dekripsi</option>

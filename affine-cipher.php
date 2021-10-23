@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Program Affine Cipher - SWACoder</title>
+    <title>Affine Cipher</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <script language="JavaScript" src="js/affine.js"></script>
     <script language="JavaScript" src="js/util.js"></script>
@@ -95,7 +95,17 @@ window.setTimeout('start_update()', 100);
 
     </script>
 </head>
-
+<style type="text/css">
+  div.wrapper {
+    max-width: 400px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 30px auto;
+  }
+  textarea {
+    width: 80%;
+  }
+</style>
 <body class="hold-transition skin-red sidebar-mini">
 
     <div class="wrapper">
@@ -152,7 +162,7 @@ window.setTimeout('start_update()', 100);
                             </select>
                             </p>
                             <p>
-                            <textarea name="text" rows="5" cols="80" placeholder="Masukan Text..."></textarea>
+                            <textarea name="text" placeholder="Masukan Text..."></textarea>
                             </p>
                         </form>
                             <p>Hasil :</p>
